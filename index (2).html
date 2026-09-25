@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rafik Baig – Mechanical Engineering Portfolio</title>
+<meta name="description" content="Mechanical engineering student at Toronto Metropolitan University. CAD, simulation, and built projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f4;--panel:#f8fafb;--ink:#14213d;--mute:#56627a;--line:#14213d;--acc:#f2b705;--accink:#14213d;--link:#0b4fa8}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1520;--panel:#141d2b;--ink:#e8edf3;--mute:#9aa8bd;--line:#8fa0b8;--acc:#f2b705;--accink:#14213d;--link:#8ab8ff}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--link)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;line-height:1;margin:0}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:2px solid var(--line)}
+nav b{font:700 1.4rem "Barlow Condensed",sans-serif}
+nav div{display:flex;gap:22px}
+nav a{color:var(--ink);text-decoration:none;font-weight:500}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--acc);text-decoration-thickness:3px}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center;padding:64px 0 72px}
+.hero h1{font-size:clamp(4rem,11vw,8.5rem);letter-spacing:-.01em}
+.hero p{max-width:34em;font-size:1.15rem;margin:24px 0}
+.hero figure{margin:0;position:relative}
+.hero img{display:block;width:100%;border:2px solid var(--line);background:#000}
+.hero figcaption,.cap{font-size:.85rem;color:var(--mute);margin-top:8px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border:2px solid var(--line);text-decoration:none;color:var(--ink);font-weight:500}
+.btn.p{background:var(--acc);color:var(--accink);border-color:var(--acc)}
+.btn:hover{border-color:var(--acc)}
+section{padding:56px 0;border-top:2px solid var(--line)}
+section>.wrap>h2{font-size:2.6rem;margin-bottom:28px}
+.proj{background:var(--panel);border:2px solid var(--line);margin-bottom:36px}
+.proj .body{padding:26px 26px 22px}
+.proj h3{font-size:2rem;margin-bottom:10px}
+.proj p{margin:0 0 12px;max-width:44em}
+.proj ul{margin:0 0 4px;padding-left:20px;max-width:44em}
+.proj li{margin-bottom:4px}
+.imgs{display:grid;grid-template-columns:1fr 1.3fr;gap:16px;margin-top:20px;align-items:start}
+.imgs img{width:100%;display:block;border:2px solid var(--line)}
+.tb{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--line)}
+.tb div{padding:10px 16px;border-right:1px solid var(--line);font-weight:500;font-size:.95rem}
+.tb div:last-child{border-right:0}
+.tb span{display:block;font-size:.78rem;color:var(--mute);font-weight:400}
+.tb .st{background:var(--acc);color:var(--accink)}
+.tb .st span{color:var(--accink);opacity:.75}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.two h3{font-size:1.5rem;margin-bottom:10px}
+dl{margin:0}
+dt{font-weight:500;margin-top:10px}
+dd{margin:0;color:var(--mute)}
+footer{border-top:2px solid var(--line);padding:32px 0 48px;color:var(--mute);font-size:.9rem}
+@media (max-width:760px){
+.hero,.two,.imgs{grid-template-columns:1fr}
+.hero{padding:40px 0 48px;gap:32px}
+.tb{grid-template-columns:1fr 1fr}
+.tb div{border-bottom:1px solid var(--line)}
+nav div{gap:14px;font-size:.95rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main"><b>RB</b><div><a href="#projects">Projects</a><a href="#about">About</a><a href="assets/Rafik_Baig_Resume.pdf">Résumé</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div>
+<h1>Rafik Baig</h1>
+<p>Mechanical engineering student at Toronto Metropolitan University. I design parts in SolidWorks, simulate them, and build them: from a laser-cut acrylic car to a 3D-printed display housing for a car emblem.</p>
+<div class="btns"><a class="btn p" href="#projects">See projects</a><a class="btn" href="assets/Rafik_Baig_Resume.pdf">Download résumé</a></div>
+</div>
+<figure>
+<img src="assets/emblem-front.jpg" alt="Yellow 3D-printed round housing holding a black round display">
+<figcaption>Prototype housing for an ESP32-S3 round display, printed in yellow PLA-style filament.</figcaption>
+</figure>
+</header>
+</div>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+
+<article class="proj">
+<div class="body">
+<h3>ESP32-S3 car emblem housing</h3>
+<p>A startup project to turn a round ESP32-S3 display into a programmable emblem for a car. I designed and 3D-printed the housing that holds the display board and its wiring, and refined the fit over several iterations.</p>
+<ul>
+<li>Built around a 2.8 in round IPS display module (480 × 480, ST7701S driver, 3.3 V analog supply).</li>
+<li>Bezel holds the glass; the back has standoffs for the board and clearance for the ribbon cable and wire harness.</li>
+<li>Fit checked against a 3D scan of a vehicle trunk lid.</li>
+</ul>
+<div class="imgs">
+<figure style="margin:0"><img src="assets/emblem-front.jpg" alt="Front of the printed bezel with the display installed"><div class="cap">Front bezel with display.</div></figure>
+<figure style="margin:0"><img src="assets/emblem-back.jpg" alt="Back of the housing showing the ESP32-S3 board, standoffs and wires"><div class="cap">Board seated on standoffs, wiring routed out the bottom.</div></figure>
+</div>
+</div>
+<div class="tb"><div><span>Type</span>Startup project</div><div><span>Tools</span>SolidWorks, FDM printing</div><div><span>Hardware</span>ESP32-S3, round TFT</div><div class="st"><span>Status</span>Iterating</div></div>
+</article>
+
+<article class="proj">
+<div class="body">
+<h3>Protective Safety Mat</h3>
+<p>A trunk-stowable tri-fold mat for changing a tire at the roadside. It gives the user a padded, insulated place to kneel and a wide base for the jack on gravel, dirt, or ice. Designed with a team of six for MEC325, guided by six personas ranging from an older driver with knee arthritis to a one-armed veteran.</p>
+<ul>
+<li>Recycled-tire SBR body, polyurethane foam kneeling panels with a UV coating, and TPU air bladders that level the mat on uneven ground.</li>
+<li>Detachable jack blocks with hook-and-loop attachment and rigid polyiso cores; reflective edge strips for night visibility; QR code linking to step-by-step instructions.</li>
+<li>Targets: −30 °C to +70 °C, at least 3 kN compressive load, under $60 CAD per unit, at least 5 years of service life.</li>
+<li>I produced the SolidWorks drawings: full assembly, mat, insulator panel, and reflector.</li>
+</ul>
+<div class="imgs" style="grid-template-columns:1fr">
+<figure style="margin:0"><img src="assets/mat-assembly.jpg" alt="SolidWorks drawing of the tri-fold mat: orthographic views, isometric view, and parts table"><div class="cap">Full assembly drawing — mat, insulator panels, and reflectors.</div></figure>
+</div>
+</div>
+<div class="tb"><div><span>Course</span>MEC325, Fall 2025</div><div><span>Team</span>Team 0305 (6)</div><div><span>Tools</span>SolidWorks, human-factors analysis</div><div class="st"><span>Status</span>Complete</div></div>
+</article>
+
+<article class="proj">
+<div class="body">
+<h3>Rubber-band powered acrylic car</h3>
+<p>A wind-up car cut from a single 8 × 10 in acrylic sheet. It has to knock over Jenga blocks along a course and stop inside a parking zone, using only a wooden dowel, five rubber bands, a paperclip, and a handful of screws.</p>
+<ul>
+<li>Larger 2 in rear drive wheels (with cut rubber band tires for grip) and 1.5 in front wheels, on a press-fit dowel axle.</li>
+<li>Two 10 in arms swing out after the car leaves the garage. A string limiter holds them at a height that skims the tops of the blocks to save energy.</li>
+<li>Drive band anchored at the front and friction-wound onto the rear axle, so the tension is controlled and releases cleanly.</li>
+<li>I produced the SolidWorks drawings and the exploded assembly view.</li>
+</ul>
+<div class="imgs" style="grid-template-columns:1fr;max-width:420px">
+<figure style="margin:0"><img src="assets/car-exploded.jpg" alt="Exploded SolidWorks render of the car showing frame, side plates, dowel axles, and wheels"><div class="cap">Exploded assembly — frame, axles, and wheels.</div></figure>
+</div>
+</div>
+<div class="tb"><div><span>Course</span>MEC322, Winter 2026</div><div><span>Team</span>5 students</div><div><span>Tools</span>SolidWorks, laser cutter</div><div class="st"><span>Status</span>Built and tested</div></div>
+</article>
+
+<article class="proj">
+<div class="body">
+<h3>MATLAB dynamics simulations</h3>
+<p>Two computer labs from MEC311 (Dynamics) where I derived the equations by hand and then implemented them in MATLAB.</p>
+<dl>
+<dt>Lab 1: end-effector motion planning</dt>
+<dd>Compared a quadratic and a quartic speed profile between two points. The quartic profile finishes in about 1.6 s versus 2.8 s, but peaks near 58 cm/s² of acceleration versus about 35 cm/s², and the reaction force on a 0.3 kg end effector follows the same trend.</dd>
+<dt>Lab 2: slider-crank engine</dt>
+<dd>Free-body and kinetic diagrams for the connecting rod and piston, acceleration derivations for the crank at 1000 RPM (crank 0.06 m, rod 0.16 m, rod mass 3 kg, piston mass 2.5 kg), and plots of the pin reaction forces at B and D from 0° to 180°.</dd>
+</dl>
+</div>
+<div class="tb"><div><span>Course</span>MEC311</div><div><span>Tools</span>MATLAB</div><div><span>Topics</span>Kinematics, kinetics</div><div class="st"><span>Status</span>Complete</div></div>
+</article>
+
+<article class="proj">
+<div class="body">
+<h3>Toronto Metropolitan Formula Racing</h3>
+<p>Design team member since September 2024. I work with a multidisciplinary team on design changes that improve vehicle performance and structural efficiency, using SolidWorks to model new components and run simulations, and I take part in design reviews where trade-offs are decided.</p>
+</div>
+<div class="tb"><div><span>Team</span>TMU Formula Racing</div><div><span>Since</span>Sept 2024</div><div><span>Tools</span>SolidWorks, simulation</div><div class="st"><span>Status</span>Ongoing</div></div>
+</article>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<div class="two">
+<div>
+<h3>Background</h3>
+<dl>
+<dt>Bachelor of Engineering, Mechanical Engineering</dt>
+<dd>Toronto Metropolitan University, 2024 – expected 2028</dd>
+<dt>Computer technician, OS Experts Inc.</dt>
+<dd>Feb 2023 – May 2024. Set up and configured workstations, diagnosed hardware and software problems, and kept service records.</dd>
+<dt>Sales associate, H&amp;M</dt>
+<dd>June 2024 – present. Inventory, shipments, and transactions in a fast-paced store.</dd>
+</dl>
+</div>
+<div>
+<h3>Skills</h3>
+<dl>
+<dt>CAD and design</dt><dd>SolidWorks (parts, assemblies, simulation), AutoCAD 3D</dd>
+<dt>Programming and analysis</dt><dd>MATLAB, C, Excel, Vernier Graphical Analysis</dd>
+<dt>Hands-on</dt><dd>3D printing, laser cutting, lab instrumentation, hardware installation</dd>
+</dl>
+</div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Contact</h2>
+<p>I'm open to co-op and internship opportunities in mechanical design. Based in Mississauga, Ontario.</p>
+<div class="btns"><a class="btn p" href="mailto:rafik.o.baig@gmail.com">rafik.o.baig@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/rafik-baig" rel="noopener">LinkedIn</a></div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Rafik Baig</div></footer>
+</body>
+</html>
